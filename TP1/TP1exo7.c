@@ -4,5 +4,13 @@
 
 main()
 {
-    int compteur=0, note=0,
+    srand(time(NULL));
+    int compteur=0, note=0;
+
+    while(compteur<30)
+    {
+        note = rand()%20;
+        printf("%d\n",note);
+        compteur++;
+    }
 }
