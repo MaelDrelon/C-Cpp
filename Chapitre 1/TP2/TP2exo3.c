@@ -4,7 +4,7 @@
 
 main()
 {
-    int lettre=0;
+    int lettre;
 
     printf("Mettez le poid (en g) de la lettre:\n");
     scanf("%d",&lettre);
@@ -13,11 +13,13 @@ main()
     {
         printf("\nLe tarif sera de 3.00Frs\n");
     }
-    if(lettre>20 || lettre<50)
+
+    else if(lettre>=20 && lettre<50)
     {
         printf("\nLe tarif sera de 3.95Frs\n");
     }
-    else
+
+    else if(lettre>=50)
     {
         printf("\nLe tarif sera de 5.90Frs\n");
     }
