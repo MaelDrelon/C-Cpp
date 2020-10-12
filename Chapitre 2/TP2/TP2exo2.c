@@ -24,7 +24,7 @@ int main()
     {
         tot = tot-note;
         tot = tot / (compteur-1);
-        printf("note moyenne :%f\n", tot);
+        printf("note moyenne :%.2f\n", tot);
     }
     else
     {
