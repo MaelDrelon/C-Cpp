@@ -12,9 +12,9 @@ void main(int argc, char argv[])
 
 	printf("Tableau a trier par ordre croissant\n");
 	lire(tab);
-	printf("Valeurs du tableau  \n");
+	printf("\nValeurs du tableau  \n");
 	affiche(tab);
-	printf("Valeur du tableau trie par ordre croissant  \n");
+	printf("\nValeur du tableau trie par ordre croissant  \n");
 	indice_min(tab);
 	getch ();
 }
@@ -26,7 +26,7 @@ void lire(int tab[20])
 
 	for(i=0; i<20; i++)
     {
-		printf("Entrez une valeur\n");
+		printf("\nEntrez une valeur\n");
 		scanf("%d", &tab[i]);
 	}
 }
