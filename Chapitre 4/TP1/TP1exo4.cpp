@@ -1,13 +1,13 @@
 #include <iostream>
-
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
-void affiche (int tab1[20], int tab2[20])
+void affiche (int tab1[20], int tab2[20],int i,int j)
 {
-    int i;
-    int j;
 	for (i=0; i<20; i++)
-	printf ("\n%d\n", tab1[i]);
+        printf ("\n%d = %d\n",i, tab1[i]);
+
+    printf("\n\n");
+
+	for (j=0; j<20; j++)
+        printf ("\n%d = %d\n",j, tab2[j]);
 }
 
 
@@ -20,7 +20,7 @@ int main(int argc, char** argv) {
 	int	i;
 	int j;
 
-	affiche(tab1, tab2);
+	affiche(tab1, tab2, i, j);
 
 
 	return 0;
